@@ -1,8 +1,11 @@
 #+TITLE: Test Maxwell Morris
 
+
+
 * Current TODO List
 - [ ]Need to make the site pretty
 - [ ]Create a suitable structure for the website
+- [ ] Write up a personal intro
 
 * FIRST!
 Date: Sun 19 Jun 2022 21:03:21 AWST
