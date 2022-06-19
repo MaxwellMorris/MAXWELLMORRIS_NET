@@ -1,20 +1,20 @@
 #+TITLE: Test Maxwell Morris
 
-* This is my own personal website's home
-This is a test
+* Current TODO List
+- [ ]Need to make the site pretty
+- [ ]Create a suitable structure for the website
 
-* Dear Dave
-Please let this work. ¯\_(ツ)_/¯
+* FIRST!
+Date: Sun 19 Jun 2022 21:03:21 AWST
 
-* PS
-This was written at 2:48
+Today's goal was to set this website up so that I can write in org mode, push to github and be able to view it on the internet.
+I wasn't certain I'd have enough time but it was actually quite doable.
+This was way easier then the first time I tried to set up a website.
 
-* PSS
-THis was written at 2:54
+#+CAPTION: Outline of what is going on
+#+NAME:   fig:SED-HR4049
+[[./img/RoughSetUp.png]]
 
-* PSSS
-THis was written at 2:57
-
-** This was written at 7:41
-
-This was written at 7:56
+Useful references:
+- https://adamtheautomator.com/aws-s3-static-ssl-website/
+- The AWS documentation is a good place to start
