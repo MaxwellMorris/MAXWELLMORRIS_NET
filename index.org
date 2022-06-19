@@ -3,6 +3,7 @@
 
 
 * Current TODO List
+- [ ] Need to fix invalidation issues in the pipeline
 - [ ] Need to make the site pretty
 - [ ] Create a suitable structure for the website
 - [ ] Write up a personal intro
