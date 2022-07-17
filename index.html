@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 <head>
-<!-- 2022-07-17 Sun 17:56 -->
+<!-- 2022-07-17 Sun 19:01 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Maxwell Morris</title>
@@ -23,17 +23,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#orgcc3b3dd">1. About Me</a></li>
-<li><a href="#org585762f">2. Posts</a></li>
-<li><a href="#org014ea7d">3. <span class="todo TODO">TODO</span> Current TODO List</a></li>
-<li><a href="#org673c487">4. FIRST!</a></li>
-<li><a href="#orgd3b8141">5. Cool Tricks</a></li>
+<li><a href="#org2cc6806">1. About Me</a></li>
+<li><a href="#org666befc">2. Posts</a></li>
+<li><a href="#org8cdecba">3. <span class="todo TODO">TODO</span> Current TODO List</a></li>
+<li><a href="#org175a21e">4. Creating a lambda function to invalidate the website on a github push</a></li>
+<li><a href="#orgd0fdb0b">5. FIRST!</a></li>
+<li><a href="#org1c1ab85">6. Cool Tricks</a></li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-orgcc3b3dd" class="outline-2">
-<h2 id="orgcc3b3dd"><span class="section-number-2">1.</span> About Me</h2>
+<div id="outline-container-org2cc6806" class="outline-2">
+<h2 id="org2cc6806"><span class="section-number-2">1.</span> About Me</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 I am an electrical engineering student at Curtin.
@@ -42,18 +43,18 @@ I am an electrical engineering student at Curtin.
 </div>
 
 
-<div id="outline-container-org585762f" class="outline-2">
-<h2 id="org585762f"><span class="section-number-2">2.</span> Posts</h2>
+<div id="outline-container-org666befc" class="outline-2">
+<h2 id="org666befc"><span class="section-number-2">2.</span> Posts</h2>
 <div class="outline-text-2" id="text-2">
 <ul class="org-ul">
 <li><a href="./MAXWELLMORRIS_NET/Posts/FirstPost.html">First Post</a></li>
+<li>Invalidate!!?</li>
 </ul>
 </div>
 </div>
 
-
-<div id="outline-container-org014ea7d" class="outline-2">
-<h2 id="org014ea7d"><span class="section-number-2">3.</span> <span class="todo TODO">TODO</span> Current TODO List</h2>
+<div id="outline-container-org8cdecba" class="outline-2">
+<h2 id="org8cdecba"><span class="section-number-2">3.</span> <span class="todo TODO">TODO</span> Current TODO List</h2>
 <div class="outline-text-2" id="text-3">
 <ul class="org-ul">
 <li class="off"><code>[&#xa0;]</code> Need to fix invalidation issues in the pipeline</li>
@@ -67,9 +68,37 @@ I am an electrical engineering student at Curtin.
 </div>
 </div>
 
-<div id="outline-container-org673c487" class="outline-2">
-<h2 id="org673c487"><span class="section-number-2">4.</span> FIRST!</h2>
+
+<div id="outline-container-org175a21e" class="outline-2">
+<h2 id="org175a21e"><span class="section-number-2">4.</span> Creating a lambda function to invalidate the website on a github push</h2>
 <div class="outline-text-2" id="text-4">
+<p>
+<span class="timestamp-wrapper"><span class="timestamp">&lt;2022-07-17 Sun&gt;</span></span>
+References: <a href="https://medium.com/fullstackai/aws-creating-a-cloudfront-invalidation-in-codepipeline-using-lambda-actions-49c1fd3a3c31">Jacob Unna</a>,
+</p>
+
+<p>
+Tools: Python, boto.
+</p>
+
+<p>
+Boto is the library that allows for you to control AWS services.
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span style="color: #ff79c6;">import</span> json
+<span style="color: #ff79c6;">import</span> boto3
+
+<span style="color: #ffc9e8;">code_pipeline</span> = boto3.client(<span style="color: #f1fa8c;">"codepipeline"</span>)
+<span style="color: #ffc9e8;">cloud_front</span> = boto3.client(<span style="color: #f1fa8c;">"cloudfront"</span>)
+
+
+</pre>
+</div>
+</div>
+</div>
+<div id="outline-container-orgd0fdb0b" class="outline-2">
+<h2 id="orgd0fdb0b"><span class="section-number-2">5.</span> FIRST!</h2>
+<div class="outline-text-2" id="text-5">
 <p>
 Date: Sun 19 Jun 2022 21:03:21 AWST
 </p>
@@ -81,7 +110,7 @@ This was way easier then the first time I tried to set up a website.
 </p>
 
 
-<div id="org036e1b3" class="figure">
+<div id="org994d1fe" class="figure">
 <p><img src="./img/RoughSetUp.png" alt="RoughSetUp.png" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Outline of what is going on</p>
@@ -97,9 +126,9 @@ Useful references:
 </div>
 </div>
 
-<div id="outline-container-orgd3b8141" class="outline-2">
-<h2 id="orgd3b8141"><span class="section-number-2">5.</span> Cool Tricks</h2>
-<div class="outline-text-2" id="text-5">
+<div id="outline-container-org1c1ab85" class="outline-2">
+<h2 id="org1c1ab85"><span class="section-number-2">6.</span> Cool Tricks</h2>
+<div class="outline-text-2" id="text-6">
 <p>
 Excecuting shell commands inside org mode.
 </p>
@@ -108,7 +137,7 @@ Excecuting shell commands inside org mode.
 </div>
 <div id="postamble" class="status">
 <p class="author">Author: Maxwell Morris</p>
-<p class="date">Created: 2022-07-17 Sun 17:56</p>
+<p class="date">Created: 2022-07-17 Sun 19:01</p>
 </div>
 </body>
 </html>
