@@ -10,7 +10,7 @@ I am an electrical engineering student at Curtin.
 
 * Posts
 - [[org:./MAXWELLMORRIS_NET/Posts/FirstPost.html][First Post]]
-
+- Invalidate!!?
 
 * TODO Current TODO List
 - [ ] Need to fix invalidation issues in the pipeline
@@ -21,6 +21,23 @@ I am an electrical engineering student at Curtin.
 - [ ] Fix issue where only the www.maxwellmorris.net site updates not maxwellmorris.net
 - [ ] Another item
 
+
+* Creating a lambda function to invalidate the website on a github push
+<2022-07-17 Sun>
+References: [[https://medium.com/fullstackai/aws-creating-a-cloudfront-invalidation-in-codepipeline-using-lambda-actions-49c1fd3a3c31][Jacob Unna]],
+
+Tools: Python, boto.
+
+Boto is the library that allows for you to control AWS services.
+#+begin_src python
+import json
+import boto3
+
+code_pipeline = boto3.client("codepipeline")
+cloud_front = boto3.client("cloudfront")
+
+
+#+end_src
 * FIRST!
 Date: Sun 19 Jun 2022 21:03:21 AWST
 
