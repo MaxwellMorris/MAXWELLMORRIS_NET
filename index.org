@@ -10,6 +10,7 @@ I am an electrical engineering student at Curtin.
 
 * Posts
 - [[org:/Posts/FirstPost.html][First Post]]
+- [[org:/Posts/Post2.html][Thesis Planning]]
 
 * TODO Current TODO List
 - [ ] Need to fix invalidation issues in the pipeline
