@@ -1,3 +1,6 @@
+:PROPERTIES:
+:ID:       7e8572a8-fea8-44e8-a496-b41776f953f0
+:END:
 #+TITLE: Maxwell Morris
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 
@@ -9,12 +12,14 @@ I am an electrical engineering student at Curtin.
 - [[org:./MAXWELLMORRIS_NET/Posts/FirstPost.html][First Post]]
 
 
-* Current TODO List
+* TODO Current TODO List
 - [ ] Need to fix invalidation issues in the pipeline
 - [ ] Need to make the site pretty
 - [ ] Create a suitable structure for the website
 - [ ] Write up a personal intro
 - [ ] Stream line the upload sequence
+- [ ] Fix issue where only the www.maxwellmorris.net site updates not maxwellmorris.net
+- [ ] Another item
 
 * FIRST!
 Date: Sun 19 Jun 2022 21:03:21 AWST
