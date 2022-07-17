@@ -16,7 +16,7 @@ This was way easier then the first time I tried to set up a website.
 
 #+CAPTION: Outline of what is going on
 #+NAME:   fig:SED-HR4049
-[[./img/RoughSetUp.png]]
+[[/img/RoughSetUp.png]]
 
 Useful references:
 - https://adamtheautomator.com/aws-s3-static-ssl-website/

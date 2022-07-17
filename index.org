@@ -37,20 +37,3 @@ cloud_front = boto3.client("cloudfront")
 
 
 #+end_src
-* FIRST!
-Date: Sun 19 Jun 2022 21:03:21 AWST
-
-Today's goal was to set this website up so that I can write in org mode, push to github and be able to view it on the internet.
-I wasn't certain I'd have enough time but it was actually quite doable.
-This was way easier then the first time I tried to set up a website.
-
-#+CAPTION: Outline of what is going on
-#+NAME:   fig:SED-HR4049
-[[./img/RoughSetUp.png]]
-
-Useful references:
-- https://adamtheautomator.com/aws-s3-static-ssl-website/
-- The AWS documentation is a good place to start
-
-* Cool Tricks
-Excecuting shell commands inside org mode.
