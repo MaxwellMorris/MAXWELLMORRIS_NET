@@ -1,13 +1,4 @@
-#+TITLE: Maxwell Morris
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
-
-* About Me
-I am an electrical engineering student at Curtin.
-
-
-* Posts
-- [[org:./MAXWELLMORRIS_NET/Posts/FirstPost.html][First Post]]
-
+#+TITLE: Maxwell Morris Test
 
 * Current TODO List
 - [ ] Need to fix invalidation issues in the pipeline
@@ -30,6 +21,3 @@ This was way easier then the first time I tried to set up a website.
 Useful references:
 - https://adamtheautomator.com/aws-s3-static-ssl-website/
 - The AWS documentation is a good place to start
-
-* Cool Tricks
-Excecuting shell commands inside org mode.
