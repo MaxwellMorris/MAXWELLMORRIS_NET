@@ -1,40 +1,221 @@
 :PROPERTIES:
 :ID:       7e8572a8-fea8-44e8-a496-b41776f953f0
 :END:
-#+TITLE: Maxwell Morris
-#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+
+# #+BEGIN_EXPORT html
+# <!DOCTYPE html>
+# <html>
+# <head>
+# <meta name="viewport" content="width=device-width, initial-scale=1">
+# <style>
+# body {
+#   margin: 0;
+#   font-family: Arial, Helvetica, sans-serif;
+# }
+
+# .topnav {
+#   overflow: hidden;
+#   background-color: #444;
+#   top: 0;
+#   width: 10*device-width;
+#   position: fixed;
+#   border-radius: 15px;
+
+# }
+
+# .topnav a {
+#   float: left;
+#   color: #f2f2f2;
+#   text-align: center;
+#   padding: 14px 16px;
+#   text-decoration: none;
+#   padding: 7px;
+#   font-size: 10px;
+# }
+
+# .topnav a:hover {
+#   background-color: #ddd;
+#   color: black;
+# }
+
+# .topnav a.active {
+#   background-color: #EEE;
+#   color: black;
+# }
+# </style>
+# </head>
+# <body>
+
+# <div class="topnav">
+#   <a class="active" href="#home">Home</a>
+#   <a href="#contact">Contact</a>
+#   <a href="#Posts">Blog</a>
+# </div>
+
+# </body>
+# </html>
+# #+END_EXPORT
 
 * About Me
-I am an electrical engineering student at Curtin.
+
+#+begin_quote
+I am an Electrical and Electronic Engineering student at Curtin University where I am currently doing my honours thesis. I am currently working at GPA engineering as a work experience student as an Undergraduate Electrical and Instrumentation Engineer. My interests are in sensors, control systems, emacs, automation of safety systems and process controls as well as automation of document management.
+#+end_quote
+* Work Experience
+*GPA Engineering* 2022 /Electrical and Instrumentation Undergraduate Engineer/
+- Writing SCADA and PLC logic tests. Writing Factory Acceptance Testing and Site Acceptance Testing reports for brownfield extension to compression stations.
+- Creating electrical diagrams in Autocad
 
 
 * Posts
-- [[org:/Posts/FirstPost.html][First Post]]
-- [[org:/Posts/Post2.html][Thesis Planning]]
-
-* TODO Current TODO List
-- [ ] Need to fix invalidation issues in the pipeline
-- [ ] Need to make the site pretty
-- [ ] Create a suitable structure for the website
-- [ ] Write up a personal intro
-- [ ] Stream line the upload sequence
-- [ ] Fix issue where only the www.maxwellmorris.net site updates not maxwellmorris.net
-- [ ] Another item
+|   | Title           |   |   | Date             |
+|---+-----------------+---+---+------------------|
+|   | [[org:Posts/Post2.html][Thesis Planning]] |   |   | [2022-07-17 Sun] |
+|   | [[org:/Posts/FirstPost.html][FirstPost]]       |   |   | [2022-06-15]     |
 
 
-* Creating a lambda function to invalidate the website on a github push
-<2022-07-17 Sun>
-References: [[https://medium.com/fullstackai/aws-creating-a-cloudfront-invalidation-in-codepipeline-using-lambda-actions-49c1fd3a3c31][Jacob Unna]],
+* References
+This webpage uses [[https://github.com/rougier/notebook-mode][Rougier's]] notebook template [2021]
+* Notebook configuration :noexport:
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
 
-Tools: Python, boto.
+This section is used for configuring various settings in the notebook appearance as well as defining various options for the export in HTML or PDF formats. You can change any of these settings.
 
-Boto is the library that allows for you to control AWS services.
-#+begin_src python
-import json
-import boto3
+** Document information
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
 
-code_pipeline = boto3.client("codepipeline")
-cloud_front = boto3.client("cloudfront")
+#+TITLE:        Maxwell Morris
+#+SUBTITLE:     About Me and This Webpage
+#+AUTHOR:       Maxwell Morris
+#+EMAIL:        maxwell.morris@pm.me
+#+DATE:         2021-12-19 Sun
+#+DESCRIPTION:  Home page for my website
+#+OPTIONS:      toc:nil
 
+** HTML export configuration
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
 
+#+begin_export html
+#+end_export
+
+#+OPTIONS:   num:nil
+#+OPTIONS:   html-style:nil
+#+OPTIONS:   html-scripts:nil
+#+OPTIONS:   html-postamble:nil
+#+OPTIONS:   broken-links:mark
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./conf/notebook.css" />
+
+** PDF export configuration
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+
+#+begin_export PDF
+#+end_export
+
+#+OPTIONS:
+
+** Code snippets
+:PROPERTIES:
+:VISIBILITY: folded
+:END:
+
+*** Notebook setup :lisp:
+
+#+name: setup
+#+header:
+#+begin_src emacs-lisp :results none :exports none :eval no-export
+(setq org-cite-csl-styles-dir ".")
+(setq org-babel-python-command "/opt/anaconda3/bin/python")
+(require 'ob-python)
+(require 'oc-csl)
+nil
+#+end_src
+
+*** Notebook run :lisp:
+
+#+name: run
+#+header: :var scope="all"
+#+begin_src emacs-lisp :results none :exports none :eval never
+(org-babel-execute-buffer)
+nil
+#+end_src
+
+*** Notebook export :lisp:
+
+#+name: export
+#+header: :var target="html"
+#+begin_src emacs-lisp :results none :exports none :eval never
+(cond (((string= target "html")   (org-html-export-to-html))
+       ((string= target "pdf")    (org-latex-export-to-pdf))
+       ((string= target "tex")    (org-latex-export-to-latex))
+       ((string= target "latex")  (org-latex-export-to-latex))
+       (t  (message (format "Unknow backend (%s) for export" target)))))
+#+end_src
+
+*** Notebook information :lisp:
+
+#+name: document-info
+#+header: :var python=python-version emacs=emacs-version org=org-version
+#+begin_src python :results raw :exports results
+return f"{emacs}, {org} & {python}"
+#+end_src
+#+RESULTS: document-info
+
+*** Emacs version :lisp:
+
+#+name: emacs-version
+#+begin_src emacs-lisp :export none :results raw
+(format "[[https://www.gnu.org/software/emacs/][Emacs]] %d.%d"
+        emacs-major-version emacs-minor-version)
+#+end_src
+#+RESULTS: emacs-version
+
+*** Org mode version :lisp:
+
+#+name: org-version
+#+begin_src emacs-lisp :export none :results raw
+(format "[[https://www.gnu.org/software/emacs/][Org mode]] %s"
+        (org-version nil nil))
+#+end_src
+#+RESULTS: org-version
+
+*** Python version :python:
+
+#+name: python-version
+#+begin_src python :export none :results raw
+import platform
+version = platform.python_version()
+return f"[[https://www.python.org/][Python]] {version}"
+#+end_src
+
+*** Matplotlib figure preparation :python:
+
+#+name: pyfig-pre
+#+header: :var width=8 height=1
+#+begin_src python :results file :exports none
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+fig = plt.figure(figsize=(width,height))
+ax = fig.add_axes([0,0,1,1], frameon=False)
+ax.axis("off")
+#+end_src
+
+*** Matplotlib figure finalization :python:
+
+#+name: pyfig-post
+#+header: :var filename=""
+#+begin_src python :results file :exports none
+if filename:
+    plt.savefig(filename, dpi=300)
+    return filename
+return ""
 #+end_src
