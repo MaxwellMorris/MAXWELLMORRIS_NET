@@ -55,6 +55,10 @@
 # </body>
 # </html>
 # #+END_EXPORT
+#+begin_abstract
+*Email:* maxwell.morris@pm.me\\
+*LinkedIn*: [[https://www.linkedin.com/in/maxwell-morris-a38438177][LinkedIn]]
+#+end_abstract
 
 * About Me
 
@@ -63,21 +67,23 @@ I am an Electrical and Electronic Engineering student at Curtin University where
 #+end_quote
 
 * Work Experience
-*ICRAR* (International Centre for Radio Astronomy Research)
+*ICRAR*[fn::(International Centre for Radio Astronomy Research)] 2023 Sem 1 /Research Assistant/
 - Working with Software Defined Radios.
-*BinarX* Summer Intern
+*BinarX* 2022-2023 /Summer Intern/
 - Simple PCB Design and board layout in Altium.
 - Embedded C programming.
-*GPA Engineering* 2022-Present /Electrical and Instrumentation Undergraduate Engineer/
+- Ran PCB design workshop for students.
+*GPA Engineering* 2022 - Present /Electrical and Instrumentation Undergraduate Engineer/
 - Writing SCADA and PLC logic tests. Writing Factory Acceptance Testing and Site Acceptance Testing reports for brownfield extension to compression stations.
 - Creating electrical diagrams in Autocad
 
 * Posts
-|   | Title           |   |   | Date             |
-|---+-----------------+---+---+------------------|
-|   |                 |   |   |                  |
-|   | [[org:Posts/Post2.html][Thesis Planning]] |   |   | [2022-07-17 Sun] |
-|   | [[org:/Posts/FirstPost.html][FirstPost]]       |   |   | [2022-06-15]     |
+|   | Title                                     |   |   | Date             |
+|---+-------------------------------------------+---+---+------------------|
+|   | [[org:Posts/EmbeddedReport.pdf][Embedded Systems Design Lab Report]]        |   |   | [2023-06-10 Sat] |
+|   | [[org:Posts/MaxwellMorris_ISI_Lab.pdf][Communications Engineering ISI Lab Report]] |   |   | [2023-06-10 Sat] |
+# |   | [[org:Posts/Post2.html][Thesis Planning]|   |   | [2022-07-17 Sun] |
+# |   | [[org:/Posts/FirstPost.html][FirstPost]]       |   |   | [2022-06-15]     |
 
 
 * References
@@ -95,7 +101,7 @@ This section is used for configuring various settings in the notebook appearance
 :END:
 
 #+TITLE:        Maxwell Morris
-#+SUBTITLE:     About Me and This Webpage
+#+SUBTITLE:     About Me
 #+AUTHOR:       Maxwell Morris
 #+EMAIL:        maxwell.morris@pm.me
 #+DATE:         2021-12-19 Sun
