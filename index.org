@@ -59,17 +59,23 @@
 * About Me
 
 #+begin_quote
-I am an Electrical and Electronic Engineering student at Curtin University where I am currently doing my honours thesis. I am currently working at GPA engineering as a work experience student as an Undergraduate Electrical and Instrumentation Engineer. My interests are in sensors, control systems, emacs, automation of safety systems and process controls as well as automation of document management.
+I am an Electrical and Electronic Engineering student at Curtin University where I am currently doing my honours thesis. My interests are in software defined radio, electronics, PCB design and STEM outreach.
 #+end_quote
+
 * Work Experience
-*GPA Engineering* 2022 /Electrical and Instrumentation Undergraduate Engineer/
+*ICRAR* (International Centre for Radio Astronomy Research)
+- Working with Software Defined Radios.
+*BinarX* Summer Intern
+- Simple PCB Design and board layout in Altium.
+- Embedded C programming.
+*GPA Engineering* 2022-Present /Electrical and Instrumentation Undergraduate Engineer/
 - Writing SCADA and PLC logic tests. Writing Factory Acceptance Testing and Site Acceptance Testing reports for brownfield extension to compression stations.
 - Creating electrical diagrams in Autocad
-
 
 * Posts
 |   | Title           |   |   | Date             |
 |---+-----------------+---+---+------------------|
+|   |                 |   |   |                  |
 |   | [[org:Posts/Post2.html][Thesis Planning]] |   |   | [2022-07-17 Sun] |
 |   | [[org:/Posts/FirstPost.html][FirstPost]]       |   |   | [2022-06-15]     |
 
