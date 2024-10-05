@@ -87,7 +87,7 @@ I am an Electrical and Electronic Engineering student at Curtin University where
 
 
 * References
-This webpage uses [[https://github.com/rougier/notebook-mode][Rougier's]] notebook template [2021]
+This webpage uses [[https://github.com/rougier/notebook-mode][Rougier's]] notebook template [2021].
 * Notebook configuration :noexport:
 :PROPERTIES:
 :VISIBILITY: folded
