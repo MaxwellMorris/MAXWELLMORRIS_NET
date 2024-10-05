@@ -67,7 +67,7 @@ I am an Digital Signal Processing Engineer at ICRAR Curtin[fn::(International Ce
 #+end_quote
 
 * Work Experience
-*ICRAR* 2024 RF DSP Engineer  (April 2024 - Present)
+*ICRAR* (April 2024 - Present) DSP Engineer
 - Successfully tendered for and won R&D contract.
 - Systems Engineering and Digital transceiver design for HF applications.
 - Enthusiastically ran tutorials for 3^{rd} year Electronic Design unit.
@@ -75,7 +75,7 @@ I am an Digital Signal Processing Engineer at ICRAR Curtin[fn::(International Ce
 *ICRAR* (August 2023 - April 2024) Graduate Intern
 - Designed a self calibrating Software Defined Radio Array.
 
-*ICRAR* 2023 Sem 1 /Research Assistant/ - Casual
+*ICRAR* (2023 Sem 1) /Research Assistant/ - Casual
 - Testing COTS Software Defined Radios.
 
 *BinarX* (2022-2023 Summer Break) /Summer Intern/
