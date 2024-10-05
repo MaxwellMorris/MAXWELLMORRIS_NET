@@ -63,17 +63,27 @@
 * About Me
 
 #+begin_quote
-I am an Electrical and Electronic Engineering student at Curtin University where I am currently doing my honours thesis. My interests are in software defined radio, electronics, PCB design and STEM outreach.
+I am an Digital Signal Processing Engineer at ICRAR Curtin[fn::(International Centre for Radio Astronomy Research)]. My interests are in software defined radio, electronics, PCB design and STEM outreach.
 #+end_quote
 
 * Work Experience
-*ICRAR*[fn::(International Centre for Radio Astronomy Research)] 2023 Sem 1 /Research Assistant/
-- Working with Software Defined Radios.
-*BinarX* 2022-2023 /Summer Intern/
+*ICRAR* 2024 RF DSP Engineer  (April 2024 - Present)
+- Successfully tendered for and won R&D contract.
+- Systems Engineering and Digital transceiver design for HF applications.
+- Enthusiastically ran tutorials for 3^{rd} year Electronic Design unit.
+
+*ICRAR* (August 2023 - April 2024) Graduate Intern
+- Designed a self calibrating Software Defined Radio Array.
+
+*ICRAR* 2023 Sem 1 /Research Assistant/ - Casual
+- Testing COTS Software Defined Radios.
+
+*BinarX* (2022-2023 Summer Break) /Summer Intern/
 - Simple PCB Design and board layout in Altium.
 - Embedded C programming.
 - Ran PCB design workshop for students.
-*GPA Engineering* 2022 - Present /Electrical and Instrumentation Undergraduate Engineer/
+
+*GPA Engineering* (2022 - July 2023) /Electrical and Instrumentation Undergraduate Engineer/
 - Writing SCADA and PLC logic tests. Writing Factory Acceptance Testing and Site Acceptance Testing reports for brownfield extension to compression stations.
 - Creating electrical diagrams in Autocad
 
